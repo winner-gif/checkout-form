@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="./bootstrap.png" alt="" width="72" height="72" />
+        <h2>Checkout form</h2>
+        <br />
+        <p class="text">
+          Below is an example with Bootstrap's form controls. Each required form
+          <br />
+          group has a validation state that can be triggered by attempting to
+          submit the form without completing it.
+        </p>
+      </div>
+      <div class="wrapper">
+        <div>
+          <h4 class="billing">Billing address</h4>
+          <div class="input">
+            <div class="input-name input-width">
+              <label for="First-name" class="form-label">First name</label>
+              <input id="First-name" type="text" class="form" />
+            </div>
+            <div class="input-name input-width">
+              <label for="Last-name" class="form-label">Last name</label>
+              <input id="Last-name" type="text" class="form" />
+            </div>
+          </div>
+          <div class="input-width">
+            <label for="username" class="user">Username</label>
+            <input
+              id="username"
+              type="text"
+              class="user"
+              placeholder="Username"
+            />
+          </div>
+          <div class="input-width">
+            <label for="email" class="mail">Email (optional)</label>
+            <input
+              type="email"
+              name="Email"
+              id="email"
+              placeholder="you@example.com"
+            />
+          </div>
+          <div class="input-width">
+            <label for="address" class="address">Address</label>
+            <input
+              id="address"
+              type="text"
+              class="address"
+              placeholder="1234 main st"
+            />
+          </div>
+          <div class="input-width">
+            <label for="address" class="address">Address 2(optional)</label>
+            <input
+              id="address"
+              type="text"
+              class="address"
+              placeholder="Apartment or suite"
+            />
+          </div>
+          <div class="select">
+            <div class="country">
+              <label for="country" class="country">Country</label>
+              <select class="location" name="Choose..." id="Choose">
+                <option value="">Choose...</option>
+              </select>
+            </div>
+            <div class="country">
+              <label for="state" class="state">State</label>
+              <select class="location" name="Choose..." id="Choose">
+                <option value="">Choose...</option>
+              </select>
+            </div>
+            <div class="country">
+              <label for="zip" class="zip">Zip</label>
+              <input id="zip" type="text" class="zip" />
+            </div>
+          </div>
+          <ul class="shipping">
+            <li>
+              <input type="checkbox" name="checkbox" id="checkbox" /> Shipping
+              address is the same as my billing address
+            </li>
+            <li>
+              <input type="checkbox" name="checkbox" id="checkbox" /> Save this
+              information for next time
+            </li>
+          </ul>
+          <h4 class="payment">Payment</h4>
+          <ul>
+            <li><input type="radio" name="radio" id="radio" />Credit card</li>
+            <li><input type="radio" name="radio" id="radio" />Debit card</li>
+            <li><input type="radio" name="radio" id="radio" />PayPal</li>
+          </ul>
+          <div class="name-card">
+            <div class="card-width">
+              <label for="name-card">Name on card</label>
+              <input id="name-card" type="text" />
+            </div>
+            <div class="card-width">
+              <label for="credit-card">Credit card number</label>
+              <input id="credit-card" type="text" class="credit-card" />
+            </div>
+          </div>
+          <div class="expiration">
+            <div >
+              <label for="expire" class="expire">Expiration</label>
+              <input id="expire" type="text" class="expire" />
+            </div>
+            <div>
+              <label for="cvv" class="cvv">CVV</label>
+              <input id="cvv" type="text" class="cvv" />
+            </div>
+          </div>
+          <button class="button-checkout" type="submit">
+            Continue to Checkout
+          </button>
+        </div>
+        <div>
+          <div class="cart cart-type">
+            <h4 class="your-cart">Your cart</h4>
+            <p class="number">3</p>
+          </div>
+          <div class="cart-product">
+            <div class="cart cart-cart">
+              <p class="cart-text">
+                Product name <span>Brief description</span>
+              </p>
+              <p>$12</p>
+            </div>
+            <div class="cart">
+              <p class="cart-text">
+                Second product<span>Brief description</span>
+              </p>
+              <p>$8</p>
+            </div>
+            <div class="cart">
+              <p class="cart-text">Third item<span>Brief description</span></p>
+              <p>$5</p>
+            </div>
+            <div class="promo cart">
+              <p class="cart-text">Promo code <span>EXAMPLECODE</span></p>
+              <p>-$8</p>
+            </div>
+            <div class="cart">
+              <p class="cart-text">Total (USD)</p>
+              <p class="cart-text">$20</p>
+            </div>
+          </div>
+          <div class="button-wrapper">
+            <div class="wrap">
+              <input class="promo-code" placeholder="promo code" type="text" />
+              <button class="redeem">Redeem</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
